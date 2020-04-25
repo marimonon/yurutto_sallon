@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border-style: none;
+}
+
+body {
+  margin: auto;
+}
+
+.container-image {
+  text-align: center;
+  height: 80vh;
+  min-height: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(135, 206, 235, 0.3))), url(../img/toppage.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(135, 206, 235, 0.3)), url(../img/toppage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  background-color: #ffffff;
+  opacity: 0.5;
+  height: 100px;
+}
+
+.header-style {
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes wasshoi-anim {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes wasshoi-anim {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.header-logo {
+  display: block;
+  -webkit-animation: linear 2s infinite wasshoi-anim;
+          animation: linear 2s infinite wasshoi-anim;
+  -webkit-transform-origin: 50% 50% -20px;
+          transform-origin: 50% 50% -20px;
+}
+
+.header-logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.header-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 900px;
+  background-color: slateblue;
+  text-align: center;
+}
+
+.header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.header-menu ul li {
+  text-align: center;
+  width: 120px;
+  background-color: #92C4F1;
+  position: relative;
+}
+
+.header-menu ul li a {
+  color: #243A26;
+  display: inline-block;
+  line-height: 60px;
+  width: 120px;
+  position: relative;
+}
+
+.header-menu ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 25px;
+  background-image: url(../img/#243A26-wasshoi.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-menu ul li a:hover {
+  opacity: 80%;
+  background-color: #ffffff;
+}
+
+.header-menu ul li a:hover::before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.main-text {
+  display: inline-block;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: 'Noto Serif JP', serif;
+}
+
+.main-text h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.main-text .enter-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 150px;
+  height: 50px;
+  margin-top: 15px;
+  border: solid 3px #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+}
+
+.main-text .enter-btn a {
+  color: #ffffff;
+}
+
+.main-text .enter-btn:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  background-color: #ffffff;
+}
+
+.main-text .enter-btn:hover a {
+  color: rgba(124, 104, 103, 0.5);
+}
+
+footer {
+  padding: 20px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#85BDF0), to(#77C5BC));
+  background: linear-gradient(#85BDF0, #77C5BC);
+  color: #ffffff;
+}
+
+footer hr {
+  border: none;
+  border-width: 1px 0 0 0;
+  border-top: dotted;
+  border-color: #ffffff;
+}
+
+footer li {
+  line-height: 30px;
+}
+
+.footer-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-style a {
+  color: #ffffff;
+}
+
+.footer-style a:hover {
+  opacity: 50%;
+}
+
+.footer-wasshoi {
+  -webkit-animation: linear 15s infinite wasshoi-anim2;
+          animation: linear 15s infinite wasshoi-anim2;
+  -webkit-transform-origin: 50% 50% -200px;
+          transform-origin: 50% 50% -200px;
+}
+
+.footer-wasshoi-rapid {
+  -webkit-animation: linear 10s infinite wasshoi-anim2;
+          animation: linear 10s infinite wasshoi-anim2;
+  -webkit-transform-origin: 50% 50% -200px;
+          transform-origin: 50% 50% -200px;
+}
+
+.footer-kani {
+  -webkit-animation: linear 5s infinite wasshoi-anim2;
+          animation: linear 5s infinite wasshoi-anim2;
+  -webkit-transform-origin: 50% 50% -200px;
+          transform-origin: 50% 50% -200px;
+}
+
+@-webkit-keyframes wasshoi-anim2 {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes wasshoi-anim2 {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.footer-menu > ul > li > a {
+  position: relative;
+}
+
+.footer-menu > ul > li > a::before {
+  content: '';
+  position: absolute;
+  left: -60px;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-image: url(../img/wasshoi-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 20px 0 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-menu > ul > li > a:hover::before {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=common.css.map */

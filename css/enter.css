@@ -1,0 +1,16 @@
+body {
+  margin: auto;
+}
+
+.container {
+  padding: 100px 0;
+  text-align: center;
+  height: 80vh;
+  min-height: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(135, 206, 235, 0.3))), url(../img/danger.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(135, 206, 235, 0.3)), url(../img/danger.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/*# sourceMappingURL=enter.css.map */
